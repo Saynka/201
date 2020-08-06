@@ -60,6 +60,7 @@ var guest = 0
 
 while(guest < 4){
   var userAnswer = prompt('Please enter a number between 1 and 20');
+      console.log('the Guest' + guest);
         if(parseInt(userAnswer) === correctAnswer){
             alert('DING DING DING.  You got it right. 1 for yes, 2 for no');
             break;
@@ -83,11 +84,12 @@ var guess = 0
         
 while(guess < 7){
    var userAnswer = prompt('Please enter a number between 1 and 20');
+   console.log('the Guest' + guess);
         if(parseInt(userAnswer) === correctAnswer2){
             alert('DING DING DING.  You got it right. 1 for yes, 2 for no');
               break;
                 } else if(guess === 6 && parseInt(userAnswer) !== correctAnswer2){  
-                    alert('11...12....13')
+                    alert('11...12....13' + guess++)
                     break;
                    
                  } else if (parseInt(userAnswer) < correctAnswer2){
