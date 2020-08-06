@@ -1,8 +1,59 @@
 h1 {
-  color: greenyellow;
+  color: burlywood;
+  font-size: 150%;
+  font-style: bold;
+  text-align: center;
 }
+
 
 body {
-  background-color: burlywood;
+  background-color: rgb(100, 81, 81);
 }
 
+#div {
+  color: rgb(51, 27, 50);
+  text-align: center;
+  text-size-adjust: 18;
+  
+  }
+
+#d1 {
+  text-align: center;
+  
+}
+
+#div1 {
+  color: aqua;
+  text-align: center;
+  border: blueviolet;
+  border: 1px;
+  padding: 10px;
+
+
+}
+
+#lists {
+  color: yellowgreen;
+  padding: 10px;
+
+
+}
+
+#order {
+  padding-right: 28px;
+  list-style-type: decimal-leading-zero;
+}
+
+ul {
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  padding: inherit;
+
+}
+
+ol {
+  list-style-type: circle;
+  border: goldenrod;
+  }
