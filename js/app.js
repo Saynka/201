@@ -1,5 +1,6 @@
 'use strict'; 
 
+function alpha() {
 var questionOne = prompt('What city was i born in? pittsburgh or utah')
 if (questionOne.toLowerCase() === 'pittsburgh'){
   console.log ("got question currect")
@@ -9,7 +10,10 @@ if (questionOne.toLowerCase() === 'pittsburgh'){
   alert('Close...')
   document.write('For question one you answered ' + questionOne + '. Close...')
 }
+}
+alpha();
 
+function bubba() {
 var questionTwo = prompt('the rainest city in north america? hilo or ketchikan')
 if (questionTwo.toLowerCase() === 'ketchikan'){
   console.log ("got question currect")
@@ -19,7 +23,9 @@ if (questionTwo.toLowerCase() === 'ketchikan'){
   alert('Close...')
   document.write('For question one you answered ' + questionTwo + '. Close...')
 }
+}
 
+function jlk() {
 var questionThree = prompt('when did i move to Phoenix? 16 or 18?')
 if (questionThree.toLowerCase() === '18'){
   console.log ("got question currect")
@@ -29,7 +35,9 @@ if (questionThree.toLowerCase() === '18'){
   alert('Close...')
   document.write('For question one you answered ' + questionThree + '. Close...')
 }
+}
 
+function boba() {
 var questionFour = prompt('why did i move to anchorage')
 if (questionFour.toLowerCase() === 'college'){
   console.log ("got question currect")
@@ -39,7 +47,9 @@ if (questionFour.toLowerCase() === 'college'){
   alert('Close...')
   document.write('For question one you answered ' + questionFour + '. Close...')
 }
+}
 
+function lelo() {
 var questionFive = prompt('my brother and me did what?')
 if (questionFive.toLowerCase() === 'catering'){
   console.log ("got question currect")
@@ -49,10 +59,11 @@ if (questionFive.toLowerCase() === 'catering'){
   alert('Close...')
   document.write('For question one you answered ' + questionFive + '. Close...')
 }
+}
 
 // var wannaPlay = prompt('Do you want to play a gussing game, enter 1, if not enter 2');
   
-
+function question6() {
 var correctAnswer = 12;
 
 var guest = 0
@@ -76,20 +87,22 @@ while(guest < 4){
           alert('Incorrect, to high.  Try Again.');
             }
         }
+}
 
+function big2() {
 
 var correctAnswer2 = ['11,12,13'];
 
 var guess = 0
         
-while(guess < 7){
+while(guess < 6){
    var userAnswer = prompt('Please enter a number between 1 and 20');
    console.log('the Guest' + guess);
         if(parseInt(userAnswer) === correctAnswer2){
-            alert('DING DING DING.  You got it right. 1 for yes, 2 for no');
+            alert('DING DING DING.  You got it right. 11, 12, 13');
               break;
-                } else if(guess === 6 && parseInt(userAnswer) !== correctAnswer2){  
-                    alert('11...12....13' + guess++)
+                } else if(guess === 5 && parseInt(userAnswer) !== correctAnswer2){  
+                    alert('11...12....13')
                     break;
                    
                  } else if (parseInt(userAnswer) < correctAnswer2){
@@ -101,7 +114,14 @@ while(guess < 7){
                     }
                 }
         
-
+              }
     
+                alpha();
+                bubba();
+                jlk();
+                boba();
+                lelo();
+                question6();
+                big2();
 
 
