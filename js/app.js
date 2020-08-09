@@ -91,17 +91,17 @@ while(guest < 4){
 
 function big2() {
 
-var correctAnswer2 = ['11,12,13'];
+var correctAnswer2 = [11 , 12, 13];
 
 var guess = 0
         
 while(guess < 6){
    var userAnswer = prompt('Please enter a number between 1 and 20');
    console.log('the Guest' + guess);
-        if(parseInt(userAnswer) === correctAnswer2){
+        if(Number(userAnswer) === correctAnswer2){
             alert('DING DING DING.  You got it right. 11, 12, 13');
               break;
-                } else if(guess === 5 && parseInt(userAnswer) !== correctAnswer2){  
+                } else if(guess === 5 && Number(userAnswer) !== correctAnswer2){  
                     alert('11...12....13')
                     break;
                    
