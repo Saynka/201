@@ -1,5 +1,14 @@
 'use strict'; 
 
+function name() {
+  var userName = prompt('What is your name?');
+// console.log('the user\'s name is' + userName);
+alert('Welcome ' + userName + '!' + ' I am the one known as kale')
+alert('there will be a quiz ');
+document.write('<h2>' + 'Hello ' + userName + '</h2>');
+document.write('Welcome')
+}
+
 function alpha() {
 var questionOne = prompt('What city was i born in? pittsburgh or utah')
 if (questionOne.toLowerCase() === 'pittsburgh'){
@@ -11,7 +20,7 @@ if (questionOne.toLowerCase() === 'pittsburgh'){
   document.write('For question one you answered ' + questionOne + '. Close...')
 }
 }
-alpha();
+
 
 function bubba() {
 var questionTwo = prompt('the rainest city in north america? hilo or ketchikan')
@@ -73,7 +82,7 @@ while(guest < 4){
   var userAnswer = prompt('Please enter a number between 1 and 20');
       console.log('the Guest' + guest);
         if(parseInt(userAnswer) === correctAnswer){
-            alert('DING DING DING.  You got it right. 1 for yes, 2 for no');
+            alert('DING DING DING.  You got it right');
             break;
         } else if(guest === 3 && parseInt(userAnswer) !== correctAnswer){  
             alert('times up neo')
@@ -89,19 +98,19 @@ while(guest < 4){
         }
 }
 
-function big2() {
 
-var correctAnswer2 = [11 , 12, 13];
+function big2() {
+var correctAnswer2 = [11,12,13];
 
 var guess = 0
         
 while(guess < 6){
    var userAnswer = prompt('Please enter a number between 1 and 20');
    console.log('the Guest' + guess);
-        if(Number(userAnswer) === correctAnswer2){
-            alert('DING DING DING.  You got it right. 11, 12, 13');
+        if(parseInt(userAnswer) === correctAnswer2[0] || parseInt(userAnswer) === correctAnswer2[1] || parseInt(userAnswer) === correctAnswer2[2]){
+            alert('DING DING DING.  You got it right. 11, 12, 13' + userName);
               break;
-                } else if(guess === 5 && Number(userAnswer) !== correctAnswer2){  
+                } else if(guess === 5 && parseInt(userAnswer) !== correctAnswer2){  
                     alert('11...12....13')
                     break;
                    
@@ -115,13 +124,15 @@ while(guess < 6){
                 }
         
               }
-    
-                alpha();
-                bubba();
-                jlk();
-                boba();
-                lelo();
-                question6();
+                
+              
+                // name();
+                // alpha();
+                // bubba();
+                // jlk();
+                // boba();
+                // lelo();
+                // question6();
                 big2();
 
 
